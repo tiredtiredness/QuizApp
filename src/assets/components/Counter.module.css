@@ -1,0 +1,28 @@
+.counter {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.counterButton {
+  background-color: transparent;
+  border: none;
+}
+
+.counterInput {
+  padding: 12px;
+  border-radius: 10px;
+  border: 4px solid #125365;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+  color: var(--color-dark);
+  width: 118px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.counterInput::-webkit-outer-spin-button,
+.counterInput::-webkit-inner-spin-button {
+  display: none;
+}

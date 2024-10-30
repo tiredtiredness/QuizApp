@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('./normalize.css');
+
+:root {
+  --color-white: #f1f1ef;
+  --color-dark: #125365;
+  --bg-color-button: #ff9c46;
+  --bg-color-button-disabled: #edd0b6;
+  --color-green: #2a8f55;
+  --color-red: #df4c25;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1280px;
+
+  background: linear-gradient(
+    45deg,
+    #125365 41%,
+    #ff713f 41%,
+    #ff713f 55%,
+    #ff9d46 55%,
+    #ff9d46 85.4%,
+    #ffca4a 75%
+  );
+  background-attachment: fixed;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+  width: 100dvw;
+  min-height: 100dvh;
+}
+
+button {
+  cursor: pointer;
+}
