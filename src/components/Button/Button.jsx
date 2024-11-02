@@ -1,10 +1,13 @@
-import { Fragment } from 'react';
+/* eslint-disable react/prop-types */
 import styles from './Button.module.css';
 
-const Button = ({ children, onClick }) => {
+const Button = ({ children, disabled = false, onClick }) => {
   return (
     <div className={styles.wrapper}>
-      <button className={styles.button} onClick={onClick}>
+      <button
+        className={`${styles.button} ${disabled ? styles.disabled : ''}`}
+        onClick={onClick}
+      >
         {children}
       </button>
       <div className={styles.description}>

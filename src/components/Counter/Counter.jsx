@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ButtonIcon from './ButtonIcon';
+import Icon from '../Icon/Icon';
 
 import styles from './Counter.module.css';
 
@@ -15,7 +15,7 @@ const Counter = () => {
         }}
         className={styles.counterButton}
       >
-        <ButtonIcon type='minus' color />
+        <Icon type='minus' color />
       </button>
       <input
         type='number'
@@ -32,7 +32,7 @@ const Counter = () => {
         }}
         className={styles.counterButton}
       >
-        <ButtonIcon type='plus' color />
+        <Icon type='plus' color />
       </button>
     </form>
   );

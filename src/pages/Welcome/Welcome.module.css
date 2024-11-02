@@ -1,0 +1,51 @@
+.mainTitleWrapper,
+.mainCounterWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.mainTitleWrapper {
+  gap: 8px;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.mainTitleWrapper p {
+  font-size: 28px;
+  line-height: 32px;
+  text-wrap: pretty;
+}
+
+.mainCounterWrapper {
+  gap: 16px;
+}
+
+.mainCounterWrapper p {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+}
+
+.welcomeImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0px, -80px);
+  width: 135px;
+  height: 146px;
+  background-image: url('../../assets/images/question.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}

@@ -1,6 +1,7 @@
-import styles from './ButtonIcon.module.css';
+/* eslint-disable react/prop-types */
+import styles from './Icon.module.css';
 
-const ButtonIcon = ({ type, size = 'big', color = 'default' }) => {
+const Icon = ({ type, size = 'big', color = 'default' }) => {
   const iconColor = color === 'default' ? '#F1F1EF' : '#125365';
   const iconSize = size === 'big' ? styles.iconBig : styles.iconSmall;
   switch (type) {
@@ -38,7 +39,7 @@ const ButtonIcon = ({ type, size = 'big', color = 'default' }) => {
           xmlns='http://www.w3.org/2000/svg'
           className={iconSize}
         >
-          <circle cx='30' cy='30' r='23' stroke={iconColor} stroke-width='4' />
+          <circle cx='30' cy='30' r='23' stroke={iconColor} strokeWidth='4' />
           <path
             d='M31.3846 22.3846C31.3846 21.6187 30.7659 21 30 21C29.2341 21 28.6154 21.6187 28.6154 22.3846V28.6154H22.3846C21.6187 28.6154 21 29.2341 21 30C21 30.7659 21.6187 31.3846 22.3846 31.3846H28.6154V37.6154C28.6154 38.3813 29.2341 39 30 39C30.7659 39 31.3846 38.3813 31.3846 37.6154V31.3846H37.6154C38.3813 31.3846 39 30.7659 39 30C39 29.2341 38.3813 28.6154 37.6154 28.6154H31.3846V22.3846Z'
             fill={iconColor}
@@ -56,7 +57,7 @@ const ButtonIcon = ({ type, size = 'big', color = 'default' }) => {
           xmlns='http://www.w3.org/2000/svg'
           className={iconSize}
         >
-          <circle cx='30' cy='30' r='23' stroke={iconColor} stroke-width='4' />
+          <circle cx='30' cy='30' r='23' stroke={iconColor} strokeWidth='4' />
           <path
             d='M39 30.3846C39 31.1505 38.3813 31.7692 37.6154 31.7692H22.3846C21.6187 31.7692 21 31.1505 21 30.3846C21 29.6187 21.6187 29 22.3846 29H37.6154C38.3813 29 39 29.6187 39 30.3846Z'
             fill={iconColor}
@@ -67,4 +68,4 @@ const ButtonIcon = ({ type, size = 'big', color = 'default' }) => {
   }
 };
 
-export default ButtonIcon;
+export default Icon;

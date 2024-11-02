@@ -30,5 +30,8 @@
 .description span {
   font-size: 10px;
   font-weight: 700;
-  line-height: 12.1px;
+}
+
+.disabled {
+  background-color: var(--bg-color-button-disabled);
 }
